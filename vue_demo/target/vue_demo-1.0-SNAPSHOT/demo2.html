@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title>v-on:click</title>
+    <script src="js/vuejs-2.5.16.js"></script>
+</head>
+<body>
+<div id="app">
+    {{message}}
+    <!--  @：是v-on的简写方式-->
+    <button v-on:click="btn1">vue的onclick</button>
+    <button @click="btn2">vue的onclick2</button>
+</div>
+</body>
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            message: "fuck you"
+        },
+        methods: {
+            btn1: function () {
+                alert(this.message)
+            },
+            btn2: function () {
+                alert(this.message + "2")
+            }
+        }
+    })
+</script>
+</html>
+
+
+

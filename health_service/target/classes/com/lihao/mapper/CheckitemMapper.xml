@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lihao.mapper.CheckitemMapper">
+
+    <!--分页条件查询-->
+    <select id="getAllCheckitem" resultType="checkItem">
+        select * from t_checkitem
+        <where>
+            <if test="name!=null and name!=''">
+                name like concat ("%",#{name},"%")
+            </if>
+        </where>
+    </select>
+
+</mapper>

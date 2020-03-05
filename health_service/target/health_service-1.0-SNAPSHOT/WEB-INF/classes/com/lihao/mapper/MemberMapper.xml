@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lihao.mapper.MemberMapper">
+
+    <insert id="add" useGeneratedKeys="true" keyProperty="id">
+        insert into t_member (name,phoneNumber,idCard,sex,regTime) values(#{name},#{phoneNumber},#{idCard},#{sex},#{regTime})
+    </insert>
+</mapper>

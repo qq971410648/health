@@ -1,0 +1,12 @@
+com\lihao\mapper\OrderMapper.class
+com\lihao\service\impl\CheckitemServiceImpl.class
+com\lihao\mapper\OrderSettingMapper.class
+com\lihao\service\impl\CheckGroupServiceImpl.class
+com\lihao\service\impl\OrderSettingServiceImpl.class
+com\lihao\service\impl\MemberServiceImpl.class
+com\lihao\mapper\CheckitemMapper.class
+com\lihao\service\impl\SetmealServiceImpl.class
+com\lihao\mapper\SetmealMapper.class
+com\lihao\service\impl\OrderServiceImpl.class
+com\lihao\mapper\MemberMapper.class
+com\lihao\mapper\CheckGroupMapper.class

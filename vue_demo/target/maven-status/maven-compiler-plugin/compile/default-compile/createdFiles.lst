@@ -1,0 +1,5 @@
+com\lihao\controller\UserController.class
+com\lihao\service\impl\UserServiceImpl.class
+com\lihao\domain\User.class
+com\lihao\mapper\UserMapper.class
+com\lihao\service\UserService.class

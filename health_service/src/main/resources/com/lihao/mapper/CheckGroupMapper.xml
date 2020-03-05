@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lihao.mapper.CheckGroupMapper">
+
+    <!--分页查询-->
+    <select id="getAllCheckGroupByCP" resultType="checkgroup">
+        select * from t_checkgroup
+        <where>
+            <if test="name!=null and name!=''">
+                name like concat("%",#{name},"%")
+            </if>
+        </where>
+    </select>
+
+    <insert id="addCheckGroup" useGeneratedKeys="true" keyProperty="id">
+        insert into t_checkgroup(code,name,helpCode,sex,remark,attention) values (#{code},#{name},#{helpCode},#{sex},#{remark},#{attention})
+    </insert>
+
+    <insert id="addForMiddle" parameterType="hashmap">
+        insert into t_checkgroup_checkitem (checkgroup_id,checkitem_id) values (#{checkgroup_id},#{checkitem_id})
+    </insert>
+</mapper>

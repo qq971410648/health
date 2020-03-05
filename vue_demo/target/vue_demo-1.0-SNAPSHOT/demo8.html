@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>v-model的使用</title>
+    <script src="js/vuejs-2.5.16.js"></script>
+</head>
+
+<body>
+<div id="app">
+    <input value="user.name"><!-- 失效 -->
+    <br>
+    <input v-model="user.name"><!-- v-model：用于获取对象的属性 -->
+    <br>
+    <input v-model="user.sex">
+</div>
+</body>
+<script>
+    new Vue({
+        el: "#app",
+        data: {
+            user: {
+                id: 1,
+                name: "zhangsan",
+                sex: "男"
+            }
+        }
+    })
+</script>
+</html>
+
+

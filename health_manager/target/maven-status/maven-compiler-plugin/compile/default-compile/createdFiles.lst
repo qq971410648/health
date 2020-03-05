@@ -1,0 +1,5 @@
+com\lihao\controller\OrderSettingController.class
+com\lihao\controller\ReportController.class
+com\lihao\controller\CheckGroupController.class
+com\lihao\controller\CheckitemController.class
+com\lihao\controller\SetmealController.class

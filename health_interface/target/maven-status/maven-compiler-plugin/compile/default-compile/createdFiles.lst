@@ -1,0 +1,6 @@
+com\lihao\service\OrderService.class
+com\lihao\service\CheckGroupService.class
+com\lihao\service\OrderSettingService.class
+com\lihao\service\CheckitemService.class
+com\lihao\service\MemberService.class
+com\lihao\service\SetmealService.class
